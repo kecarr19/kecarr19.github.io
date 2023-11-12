@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- My lab 12 Katelyn Carr November 2nd-->
+<meta charset="utf-8">
+<title>Lab 12</title>
+
+<style>
+
+body{position:absolute;
+		left:30%;
+		top:5%;
+		text-align:center;
+		text-align:center;}
+		
+.p1{font-size: 50px;
+		color: teal;}
+		
+.p2{font-size: 25px;
+		color:pink}
+
+</style>
+
+<script>
+
+function newimage(x) {document.getElementById("cake").src=x;}
+
+</script>
+
+</head>
+<body>
+
+<p class="p1">Happy Birthday!</p>
+
+<p class="p2">I hope this day is amazing as you are!</p>
+
+<img id="cake" onmouseover="newimage('lab12_images/birthdaycake2.jpg');" src="lab12_images/birthdaycake1.jpg" alt="A birthday cake" onmouseout="newimage('lab12_images/birthdaycake1.jpg');"> 
+
+<!--I added the onmouseout so it'd return to the original image to make it more interesting than just changing the image once and not going back-->
+
+</body>
+</html>
