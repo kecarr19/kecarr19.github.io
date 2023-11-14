@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- My lab 12 Katelyn Carr November 2nd-->
+<meta charset="utf-8">
+<title>Lab 12</title>
+
+<style>
+		
+.p1{font-size: 50px;
+		color: teal;
+		position:absolute;
+		left: 33% ;
+		top: 250px;
+		width:600px;
+		text-align:center;
+		transform: rotate(180deg)}
+		
+/*I wanted to make a horizontal card instead of a vertical fold card, so I rotated one side of it 180 degrees so that if you were to print it out it would functionally stand up if folded on the fold line and show the two different sides right-side-up if you were to display it say on a desk*/
+		
+.cardfoldline{border:solid;
+					width:100%;
+					position:absolute;
+					top: 600px}
+
+.p2{font-size: 25px;
+		color:pink;
+		position:absolute;
+		left: 33%;
+		top: 700px;
+		text-align:center;
+		padding:5px;
+		width:600px}
+
+#cake{position:absolute;
+		width: 600px;
+		top: 750px;
+		left:33%}
+
+</style>
+
+<script>
+
+function newimage(x) {document.getElementById("cake").src=x;}
+
+</script>
+
+</head>
+<body>
+
+<div class="p1">Happy Birthday!</div>
+
+<div class="cardfoldline"></div>
+
+<div class="p2">I hope this day is amazing as you are!</div>
+
+<img id="cake" onmouseover="newimage('lab12_images/birthdaycake2.jpg');" src="lab12_images/birthdaycake1.jpg" alt="A birthday cake" onmouseout="newimage('lab12_images/birthdaycake1.jpg');"> 
+
+<!--I added the onmouseout so it'd return to the original image to make it more interesting than just changing the image once and not going back-->
+
+</body>
+</html>
